@@ -44,3 +44,11 @@ Your next task is to take the recently built hello-dropwizard service:
 ## Results
 
 Make the dev environment automation available via a public github repo with any instructions on how to run your dev environment in an accompanying `README.md` file. Send it in and be prepared to discuss it.
+
+
+## DOCKERIZE APP
+
+Clone the source code on your host machine and run the Dockerfile with below commands
+docker build -t sample .
+docker images | grep -i sample <pick image id>
+docker run -d -p 80:8080 <image id>
