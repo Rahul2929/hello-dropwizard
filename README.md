@@ -51,5 +51,7 @@ Make the dev environment automation available via a public github repo with any 
 * Clone the source code on your host machine and run the Dockerfile with below commands
 	
 	docker build -t sample .
-	docker images | grep -i sample <pick image id>
-	docker run -d -p 80:8080 <image id>
+	
+	docker images | grep -i sample # pick image id
+	
+	docker run -d -p 80:8080 image id
